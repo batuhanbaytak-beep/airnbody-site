@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101113">
+  <meta name="description" content="AIRNBODY — Duş sonrası kurulanma deneyimine yeni bir yaklaşım. Türkiye'de üretim hedefiyle geliştirilen vücut kurutma konsepti.">
+  <title>AIRNBODY — A New Way to Dry</title>
+  <style>
+    :root{--bg:#101113;--panel:#181a1d;--ink:#f4f4f2;--muted:#a7a9ad;--line:rgba(255,255,255,.13);--silver:#c8cbd0;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .logo{font-size:22px;font-weight:800;letter-spacing:.19em}.logo span{color:#aeb2b8}
+    .navlinks{display:flex;gap:30px;color:#c3c5c9;font-size:13px}.navlinks a:hover{color:#fff}
+    .navcta,.btn{border:1px solid rgba(255,255,255,.34);padding:12px 18px;border-radius:3px;font-size:12px;letter-spacing:.09em;text-transform:uppercase;transition:.2s}
+    .navcta:hover,.btn:hover{background:#f4f4f2;color:#101113}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:34px;padding:70px 0 82px}
+    .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#b8bbc0}
+    h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.065em;margin:24px 0 24px;font-weight:650}
+    h1 em{font-style:normal;color:#aeb2b8}
+    .lead{font-size:18px;line-height:1.7;color:#c1c3c7;max-width:530px}
+    .hero-actions{display:flex;gap:13px;align-items:center;margin-top:34px;flex-wrap:wrap}.btn.primary{background:#f0f0ed;color:#111;border-color:#f0f0ed}
+    .micro{font-size:11px;color:#858990;margin-top:22px}
+    .visual{height:560px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#42464b 0,#24272b 33%,#151719 70%);border:1px solid rgba(255,255,255,.08)}
+    .visual:before{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(255,255,255,.11);border-radius:50%;box-shadow:0 0 0 48px rgba(255,255,255,.018),0 0 0 96px rgba(255,255,255,.014)}
+    .device{position:relative;width:150px;height:430px;border-radius:70px 70px 30px 30px;background:linear-gradient(90deg,#555a60,#e2e4e5 18%,#9da2a8 40%,#f0f1f0 56%,#777d84 83%,#3e4349);box-shadow:28px 30px 65px #0009,inset 5px 0 9px #ffffff75,inset -8px 0 15px #17191d}
+    .device:before{content:"";position:absolute;left:22px;right:22px;top:32px;height:3px;background:#ffffff99;border-radius:10px;box-shadow:0 26px 0 #ffffff55,0 52px 0 #ffffff55,0 78px 0 #ffffff55,0 104px 0 #ffffff55,0 130px 0 #ffffff55,0 156px 0 #ffffff55,0 182px 0 #ffffff55,0 208px 0 #ffffff55,0 234px 0 #ffffff55,0 260px 0 #ffffff55}
+    .device:after{content:"AIRNBODY";position:absolute;bottom:36px;left:0;right:0;text-align:center;font-size:8px;letter-spacing:.18em;color:#34383d;font-weight:800}
+    .visual-label{position:absolute;bottom:22px;left:24px;right:24px;display:flex;justify-content:space-between;color:#b9bdc2;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+    .section{padding:105px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}
+    h2{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-.05em;margin:13px 0 0;font-weight:600}.section-intro{max-width:390px;color:var(--muted);font-size:15px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);padding:28px;min-height:220px;border:1px solid var(--line)}
+    .num{font-size:11px;color:#9ea3a9;letter-spacing:.15em}.card h3{font-size:21px;margin:44px 0 10px}.card p{font-size:14px;color:#aeb1b6;margin:0}
+    .statement{background:linear-gradient(115deg,#d9dbdc,#8c9299);color:#141619;padding:76px 7%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .statement h2{font-size:clamp(36px,5vw,60px)}.statement p{color:#30343a;max-width:440px}
+    .roadmap{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+    .step{padding:28px 24px 20px 0;border-right:1px solid var(--line)}.step:not(:first-child){padding-left:24px}.step:last-child{border:0}
+    .step h3{font-size:18px;margin:35px 0 9px}.step p{font-size:13px;color:var(--muted)}
+    .contact{display:flex;justify-content:space-between;align-items:center;gap:30px;background:#191b1e;padding:48px;border:1px solid var(--line)}
+    .contact h2{font-size:clamp(32px,4vw,48px)}.contact p{color:var(--muted);max-width:500px}
+    footer{padding:34px 0 42px;color:#858990;font-size:11px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin-top:80px}
+    .disclaimer{font-size:10px;color:#777c83;margin-top:18px}
+    @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:58px 0}.visual{height:440px}.device{transform:scale(.82)}.section{padding:72px 0}.section-head,.statement,.contact{grid-template-columns:1fr;display:grid}.cards{grid-template-columns:1fr}.card{min-height:175px}.card h3{margin-top:25px}.roadmap{grid-template-columns:1fr}.step,.step:not(:first-child){padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.contact{padding:30px}.wrap{width:min(var(--max),calc(100% - 32px))}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="logo" href="#">AIRN<span>BODY</span></a>
+    <nav class="navlinks"><a href="#yaklasim">Yaklaşımımız</a><a href="#deneyim">Deneyim</a><a href="#vizyon">Üretim vizyonu</a><a href="#iletisim">İletişim</a></nav>
+    <a class="navcta" href="#iletisim">Bize ulaşın</a>
+  </header>
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Yeni nesil vücut kurutma konsepti</div>
+        <h1>Duştan sonra<br><em>yeni bir</em><br>deneyim.</h1>
+        <p class="lead">AIRNBODY, duş sonrası kurulanmaya farklı bir yaklaşım getirmek için yola çıktı. Konforu, işlevsel tasarımı ve teknolojiyi tek bir deneyimde buluşturmayı hedefliyoruz.</p>
+        <div class="hero-actions"><a class="btn primary" href="#yaklasim">AIRNBODY'yi keşfet</a><a class="btn" href="#iletisim">İletişime geç</a></div>
+        <div class="micro">TÜRKİYE'DE ÜRETİM HEDEFİYLE GELİŞTİRİLEN MARKA PROJESİ</div>
+      </div>
+      <div class="visual" role="img" aria-label="AIRNBODY için temsili dikey vücut kurutma cihazı konsept görseli">
+        <div class="device"></div>
+        <div class="visual-label"><span>Product concept</span><span>01 / AIRNBODY</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="yaklasim">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">AIRNBODY yaklaşımı</div><h2>Kurulanma rutinine<br>yeni bir bakış.</h2></div><p class="section-intro">Banyo deneyiminin son adımını yeniden düşünerek daha pratik, konforlu ve çağdaş bir kullanım deneyimi geliştirmeyi amaçlıyoruz.</p></div>
+        <div class="cards">
+          <article class="card"><div class="num">01 / TASARIM</div><h3>İşlevsel form</h3><p>Yaşam alanlarına uyum sağlayan, yalın ve dikkatle düşünülmüş bir ürün dili.</p></article>
+          <article class="card"><div class="num">02 / DENEYİM</div><h3>Günlük konfor</h3><p>Duş sonrası rutini kolaylaştırmayı hedefleyen farklı bir kurulanma yaklaşımı.</p></article>
+          <article class="card"><div class="num">03 / TEKNOLOJİ</div><h3>Akıllı mühendislik</h3><p>Performans, güvenlik ve kullanım kolaylığını birlikte ele alan geliştirme vizyonu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap statement" id="deneyim">
+      <div><div class="eyebrow">A new way to dry</div><h2>Havayla kurulanma deneyimini keşfedin.</h2></div>
+      <div><p>AIRNBODY'nin ürün geliştirme yolculuğu; kullanıcı ihtiyaçları, mühendislik, güvenlik ve tasarım odağında şekilleniyor.</p><a class="btn" href="#iletisim">Proje hakkında bilgi alın</a></div>
+    </section>
+
+    <section class="section" id="vizyon">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Üretim vizyonumuz</div><h2>Fikirden ürüne.<br>Adım adım.</h2></div><p class="section-intro">AIRNBODY, Türkiye'de kendi üretim altyapısını kurma hedefiyle planlanan bir marka ve ürün geliştirme projesidir.</p></div>
+        <div class="roadmap">
+          <article class="step"><div class="num">AŞAMA 01</div><h3>Ürün geliştirme</h3><p>Tasarım, mühendislik ve prototip çalışmalarının yürütülmesi.</p></article>
+          <article class="step"><div class="num">AŞAMA 02</div><h3>Üretim altyapısı</h3><p>Üretim tesisi, süreçler ve kalite altyapısının planlanması.</p></article>
+          <article class="step"><div class="num">AŞAMA 03</div><h3>Test ve hazırlık</h3><p>Güvenlik, performans ve uygunluk doğrulamalarının tamamlanması.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="iletisim">
+      <div class="contact">
+        <div><div class="eyebrow">İletişim</div><h2>AIRNBODY yolculuğunu takip edin.</h2><p>Ürün ve marka projesi hakkında bilgi almak için bizimle iletişime geçin.</p></div>
+        <a class="btn primary" href="mailto:info@airnbody.com?subject=AIRNBODY%20hakk%C4%B1nda">E-posta gönder</a>
+      </div>
+      <p class="disclaimer">Not: Bu sayfa ilk tasarım konseptidir. Ürün görseli temsili bir çizimdir; teknik özellikler, üretim durumu, sertifikalar ve iletişim bilgileri doğrulandıktan sonra güncellenmelidir. info@airnbody.com adresini kullanmadan önce bu e-posta adresinin size ait olduğunu doğrulayın.</p>
+    </section>
+  </main>
+  <footer class="wrap"><div class="logo">AIRN<span>BODY</span></div><div>© 2026 AIRNBODY. Tüm hakları saklıdır.</div><div>Duştan sonra yeni bir deneyim.</div></footer>
+</body>
+</html>
